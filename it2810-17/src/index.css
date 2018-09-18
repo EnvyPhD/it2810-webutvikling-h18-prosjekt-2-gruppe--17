@@ -3,3 +3,56 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-rows: 1fr 10fr 2fr;
+
+}
+.wrapper > div{
+  background: #eee;
+  border:  2px #ccc solid
+}
+.wrapper > div > div{
+  background: #eef;
+  border:  2px #ccc solid
+}
+.img{
+  grid-column: 1/2;
+}
+.txt{
+  grid-column: 2/3;
+}
+.buttons{
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+.buttons >  button{
+  background-color: #046380;
+  color: #FFF;
+  border: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 0 #034154;
+  margin-left: 18px;
+  position: relative;
+  right: 18px;
+  width: 20%;
+}
+.categories{
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+}
+.categories > div{
+  height: 40%;
+}
+.sound{
+  grid-column: 1/4;
+}
