@@ -9,7 +9,7 @@ import Txt from "./Txt";
 export default class Layout extends React.Component{
     render(){
       return(
-        <div class="wrapper">
+        <div className="wrapper">
         <Tabs />
         <Img />
         <Txt />
