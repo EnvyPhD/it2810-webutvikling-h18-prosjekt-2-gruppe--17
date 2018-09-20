@@ -7,14 +7,25 @@ import Txt from "./Txt";
 
 
 export default class Layout extends React.Component{
+    constructor(props){
+      super(props);
+      this.state = {
+        currentTab: 2,
+      };
+    }
+    updateTabs(e){
+      this.setState({currentTab: e});
+      console.log(e);
+    }
+
     render(){
       return(
         <div className="wrapper">
-        <Tabs />
+        <Tabs updateParent={this.updateTabs.bind(this)}/>
         <Img />
         <Txt />
         <Categories />
-        <Sound />
+        <Sound tab={this.state.currentTab}/>
         </div>
       );
   }
