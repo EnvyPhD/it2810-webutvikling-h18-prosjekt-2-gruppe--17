@@ -1,0 +1,22 @@
+  {
+    "categories":{
+      "textCategory1": [
+        {"id": 1, "text": "blabla1", "author": "mahboi"},
+        {"id": 2, "text": "blabla2", "author": "mahboii"},
+        {"id": 3, "text": "blabla3", "author": "mahboii"},
+        {"id": 4, "text": "blabla4", "author": "mahboIV"}
+      ],
+      "textCategory2": [
+        {"id": 5, "text": "blabla1", "author3.1": "mahboi"},
+        {"id": 6, "text": "blabla2", "author3.2": "mahboii"},
+        {"id": 7, "text": "blabla3", "author3.3": "mahboii"},
+        {"id": 8, "text": "blabla4", "author3.4": "mahboIV"}
+      ],
+      "textCategory3": [
+        {"id": 9, "text": "blabla1", "author3.1": "mahboi"},
+        {"id": 10, "text": "blabla2", "author3.2": "mahboii"},
+        {"id": 11, "text": "blabla3", "author3.3": "mahboii"},
+        {"id": 12, "text": "blabla4", "author3.4": "mahboIV"}
+      ]
+    }
+}
