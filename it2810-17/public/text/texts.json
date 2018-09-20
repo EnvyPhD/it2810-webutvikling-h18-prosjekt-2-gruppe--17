@@ -1,0 +1,18 @@
+
+
+{
+  "texts":[
+    {"text1.1": "blabla1", "author": "mahboi"},
+    {"text1.2": "blabla2", "author": "mahboii"},
+    {"text1.3": "blabla3", "author": "mahboii"},
+    {"text1.4": "blabla4", "author": "mahboIV"},
+    {"text2.1": "blabla1", "author3.1": "mahboi"},
+    {"text2.2": "blabla2", "author3.2": "mahboii"},
+    {"text2.3": "blabla3", "author3.3": "mahboii"},
+    {"text2.4": "blabla4", "author3.4": "mahboIV"},
+    {"text3.1": "blabla1", "author3.1": "mahboi"},
+    {"text3.2": "blabla2", "author3.2": "mahboii"},
+    {"text3.3": "blabla3", "author3.3": "mahboii"},
+    {"text3.4": "blabla4", "author3.4": "mahboIV"}
+  ]
+}
