@@ -30,7 +30,7 @@ class ImgForm extends React.Component{
   render(){
     return (
       <div>
-        <h> Image category </h>
+        <h3> Image category </h3>
         <form>
           <div className="imgRadio">
             <label>
@@ -83,7 +83,7 @@ class AudioForm extends React.Component{
   render(){
     return (
       <div>
-        <h> Audio category </h>
+        <h3> Audio category </h3>
         <form>
           <div className="audioRadio">
             <label>
@@ -136,7 +136,7 @@ class TextForm extends React.Component{
   render(){
     return (
       <div>
-        <h> Text category </h>
+        <h3> Text category </h3>
         <form>
           <div className="textRadio">
             <label>
