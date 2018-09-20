@@ -3,32 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+svg{
+  height: 100%;
+  width: auto;
 
-.wrapper{
-  display: grid;
-  grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 10fr 2fr;
-
-}
-.wrapper > div{
-  background: #eee;
-  border:  2px #ccc solid
-}
-.wrapper > div > div{
-  background: #eef;
-  border:  2px #ccc solid
-}
-.img{
-  grid-column: 1/2;
-}
-.txt{
-  grid-column: 2/3;
-}
-.buttons{
-  grid-column: 1/4;
-  display: flex;
-  flex-direction: row;
-  padding-top: 10px;
 }
 .buttons >  button{
   /*background-color: #046380;*/
@@ -45,8 +23,37 @@ body {
   right: 18px;
   width: 20%;
 }
+.buttons{
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 4fr 3fr 2fr;
+}
+.wrapper > div{
+  border:  2px #ccc solid
+}
+.wrapper > div > div{
+  border:  2px #ccc solid
+}
+.img{
+  grid-column: 1/2;
+  padding-top: 5px;
+}
+.txt{
+  grid-column: 1/2;
+}
+
+
 .categories{
-  grid-column: 3/4;
+  grid-column: 2/3;
+  grid-row : 2/5;
   display: flex;
   flex-direction: column;
 }
@@ -54,5 +61,102 @@ body {
   height: 40%;
 }
 .sound{
-  grid-column: 1/4;
+  grid-column: 1/2;
+}
+.face{
+  fill:gold;
+  transition: all .5s linear;
+}
+.mouth{
+  fill: none;
+  stroke: #000;
+  stroke-width:6px;
+  stroke-linecap:round;
+  transition: all .3s linear;
+}
+#monocle{
+  fill: gold;
+  stroke: #000;
+  stroke-width:2px;
+  stroke-linecap:round;
+}
+.monocle{
+  fill: none;
+  stroke: #000;
+  stroke-width:6px;
+  stroke-linecap:round;
+  transition: all.5s linear;
+}
+.left-eyebrow{
+  transform: rotate(80deg);
+  transform-origin: 100px 82px;
+  transition: all.5s linear;
+}
+.right-eyebrow{
+  transform: rotate(100deg);
+  transform-origin: 156px 82px;
+  transition: all .5s linear;
+}
+.hat{
+  stroke: #000;
+  stroke-width:12px;
+  stroke-linecap:round;
+  transition: all .5s linear;
+}
+
+#smiley:hover .right-eyebrow{
+  transform: rotate(80deg);
+}
+#smiley:hover .left-eyebrow{
+  transform: rotate(100deg);
+}
+#smiley:hover .face{
+  fill:red;
+}
+#smiley:hover  #monocle{
+  fill:red;
+}
+#smiley:hover .monocle{
+    transform: rotate(100deg);
+}
+#smiley:hover .hat{
+  transform: rotate(-100deg);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 7fr 2fr;
+
+  }
+  .wrapper > div{
+    border:  2px #ccc solid
+  }
+  .wrapper > div > div{
+    border:  2px #ccc solid
+  }
+  .img{
+    grid-column: 1/2;
+  }
+  .txt{
+    grid-column: 2/3;
+  }
+
+
+  .categories{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+  }
+  .categories > div{
+    height: 40%;
+  }
+  .sound{
+    grid-column: 1/4;
+  }
 }
