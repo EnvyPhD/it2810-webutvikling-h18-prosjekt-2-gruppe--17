@@ -3,11 +3,7 @@ import React from "react";
 export default class Txt extends React.Component{
   render(){
     return(
-<<<<<<< HEAD
-      <div className="txt"> <FetchTxt />  </div>
-=======
-      <div className="txt">  <p> Fritt hentet frå<a href="https://www.azlyrics.com/"> azlyrics.com</a> </p> </div>
->>>>>>> 15b33591b9f3c7d0dc2c87e27607b1d3673668ab
+      <div className="txt"><FetchTxt />  <p> Fritt hentet frå<a href="https://www.azlyrics.com/"> azlyrics.com</a> </p> </div>
     )
   }
 }
