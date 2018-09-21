@@ -5,7 +5,7 @@ export default class Sound extends React.Component{
     return(
       <div className="sound">
         <audio ref="audio_tag" src={this.props.url} controls autoPlay/>;
-        <p>Credits: Music from bensound.com</p>;
+        <p>Credits: Music from <a href="https://www.bensound.com/">bensound.com</a></p>;
       </div>
     );
   }

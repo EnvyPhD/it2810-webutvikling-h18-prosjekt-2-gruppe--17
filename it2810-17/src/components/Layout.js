@@ -21,6 +21,7 @@ export default class Layout extends React.Component{
     constructor(props){
       super(props);
       this.decideSongURL = this.decideSongURL.bind(this);
+
     }
     updateTabs(e){
       var a = ((this.state.currentAud - 1) * 4) + e;
@@ -37,21 +38,6 @@ export default class Layout extends React.Component{
       this.setState({currentAud: e});
     }
     decideSongURL(e){
-      if(e === 1){
-        this.setState({linkURL: 'http://localhost:3000/audio/Cinematic/bensound-adventure.mp3'});
-      }
-      else if(e === 2){
-        this.setState({linkURL: 'http://localhost:3000/audio/Happy/bensound-clearday.mp3'});
-      }
-      else if(e === 3){
-        this.setState({linkURL: 'http://localhost:3000/audio/Jazz/bensound-jazzcomedy.mp3'});
-      }
-      else if(e === 4){
-        this.setState({linkURL: 'http://localhost:3000/audio/Jazz/bensound-thejazzpiano.mp3'});
-      }
-      else if(e > 4){
-        this.setState({linkURL: 'http://localhost:3000/audio/Cinematic/bensound-theduel.mp3'});
-      }
       if(e >= 1 && e < 5){
         this.setState({linkURL: this.state.cinematic[e-1]})
       }
@@ -61,6 +47,7 @@ export default class Layout extends React.Component{
       else if (e >= 9 && e < 13) {
         this.setState({linkURL: this.state.jazz[e-9]})
       }
+
 
     }
 
