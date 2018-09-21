@@ -55,7 +55,7 @@ export default class Layout extends React.Component{
       return(
         <div className="wrapper">
         <Tabs updateParent={this.updateTabs.bind(this)}/>
-        <Img />
+        <Img tab = {this.state.currentTab} cat = {this.state.currentImg}/>
         <Txt />
         <Categories updateParentImg={this.updateImg.bind(this)} updateParentTxt={this.updateTxt.bind(this)} updateParentAud={this.updateAud.bind(this)}/>
         <Sound tab={this.state.currentTab} url={this.state.linkURL}/>

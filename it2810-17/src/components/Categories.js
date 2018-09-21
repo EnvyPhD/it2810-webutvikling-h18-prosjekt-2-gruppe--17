@@ -62,7 +62,7 @@ class ImgForm extends React.Component{
              <input type="radio" value="option2"
               checked={this.state.selectedOption === 2}
               onChange={() => this.handleChange(2)}/>
-              Cartoons
+              Silhouette
             </label>
           </div>
 
@@ -71,7 +71,7 @@ class ImgForm extends React.Component{
              <input type="radio" value="option3"
               checked={this.state.selectedOption === 3}
               onChange={() => this.handleChange(3)}/>
-              Drawings
+              Cartoon
             </label>
           </div>
         </form>
