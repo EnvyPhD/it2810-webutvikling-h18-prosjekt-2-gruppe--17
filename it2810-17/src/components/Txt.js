@@ -8,32 +8,56 @@ export default class Txt extends React.Component{
   }
 }
 
+// Class for fetching the texts stored in a json-file
 class FetchTxt extends React.Component {
   constructor(props){
-    super(props);
-    var category = "category1";
-    this.state = {
-      data: [null],
-    };
-  }
+     super(props);
+     this.fetchData = this.fetchData.bind(this);
+     this.componentDidMount = this.componentDidMount.bind(this);
+     this.state = {
+       texts: {},
+       txts: [],
+       text: '',
+       author: ''
+     };
+
+   }
+
+   // Runs when the app renders to fetch new data
+   componentDidMount(){
+     this.fetchData();
+   }
+
+   // Function for fetching json data and saving it as state
+   fetchData(){
+   fetch('http://localhost:3000/text/texts.json')
+     .then(response => response.json())
+     .then(data => {
+       this.setState({texts: data.texts});
+
+       // console.log(this.state.texts);
+       const txt = this.state.texts;
+
+       for (var i in txt){
+         console.log(txt[i]);
+       }
+
+     })
+      // Cathes any errors in the fetch and prevents crash
+     .catch(e => {
+       console.log(e);
+     })
+ }
 
 
-  componentDidMount = (category) => {
-    fetch('http://localhost:3000/text/category1.json')
-      .then(response => response.json())
-      .then(json => {
-        let text = this.state.text
-        // text[category] = json
-        this.setState({text});
-        console.log(text);
-      });
-    };
 
-  render(){
-    return(
+   render(){
+     console.log(this.state.texts);
+     return(
+       <div className="textContainer">
 
-      <div className="txtStash"></div>
-    )
+       </div>
+     )
 
-  }
+   }
 }

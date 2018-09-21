@@ -2,17 +2,29 @@
 
 {
   "texts":[
-    {"text1.1": "blabla1", "author": "mahboi"},
-    {"text1.2": "blabla2", "author": "mahboii"},
-    {"text1.3": "blabla3", "author": "mahboii"},
-    {"text1.4": "blabla4", "author": "mahboIV"},
-    {"text2.1": "blabla1", "author3.1": "mahboi"},
-    {"text2.2": "blabla2", "author3.2": "mahboii"},
-    {"text2.3": "blabla3", "author3.3": "mahboii"},
-    {"text2.4": "blabla4", "author3.4": "mahboIV"},
-    {"text3.1": "blabla1", "author3.1": "mahboi"},
-    {"text3.2": "blabla2", "author3.2": "mahboii"},
-    {"text3.3": "blabla3", "author3.3": "mahboii"},
-    {"text3.4": "blabla4", "author3.4": "mahboIV"}
+    {"text1.1": "Now look at them yo-yo's that's the way you do it\nYou play the guitar on the MTV\nThat ain't workin' that's the way you do it\nMoney for nothin' and chicks for free",
+     "author": "Dire Straits – Money for nothing"},
+    {"text1.2": "Money, it's a gas\nGrab that cash with both hands and make a stash",
+     "author": "Pink Floyd – Money"},
+    {"text1.3": "I'm looking like money m-money money m-money money money\nI'mma money m-money money m-money money money",
+     "author": "Broiler feat. Bekuh Boom – Money"},
+    {"text1.4": "Money, money, money\nMust be funny\nIn the rich man's world",
+     "author": "ABBA - Money money money"},
+    {"text2.1": "I'm walking on sunshine, whoa\nI'm walking on sunshine, whoa\nAnd don't it feel good",
+     "author3.1": "Katrina and the waves - Walking on sunshine"},
+    {"text2.2": "It's raining men! Hallelujah!\nIt's raining men! Amen!\nI'm gonna go out to run and let myself get\nAbsolutely soaking wet!",
+     "author3.2": "The weather girls - It’s raining men"},
+    {"text2.3": "God dag, god dag.\nDette her er meteorologisk institutt,\nvi kan melde om at regnet nå tar slutt og vi får sol, sol, sol.\nGod dag, god dag.\nKysten Lindesnes til Hammerfest i nord,\nhele Norge uansett hvor hen du bor;\nnå blir det sol!",
+     "author3.3": "Strikk – Sol"},
+    {"text2.4": "You can stand under my umbrella\n(Ella ella eh eh eh)\nUnder my umbrella\n(Ella ella eh eh eh)\nUnder my umbrella\n(Ella ella eh eh eh)\nUnder my umbrella\n(Ella ella eh eh eh eh eh eh)",
+     "author3.4": "Rihanna - Umbrella"},
+    {"text3.1": "If only you had seen what I now see\nAnd turned the corner where you would of been\nWithin a mile of home",
+     "author3.1": "Flogging Molly - Within a mile of home"},
+    {"text3.2": "Country roads, take me home to the place I belong\nWest Virginia, mountain mamma, take me home, country roads",
+     "author3.2": "John Denver - Take me home, country roads"},
+    {"text3.3": "Around the world, around the world\nAround the world, around the world\nAround the world, around the world\nAround the world, around the world",
+     "author3.3": "Daft Punk - Around the world"},
+    {"text3.4": "But I would walk five hundred miles\nAnd I would walk five hundred more\nJust to be the man who walked a thousand miles\nTo fall down at your door\n\nDa lat da (Da lat da), da lat da (Da lat da)\nDa-da-da dun-diddle un-diddle un-diddle uh da-da\nDa lat da (Da lat da), da lat da (Da lat da)\nDa-da-da dun-diddle un-diddle un-diddle uh da-da",
+     "author3.4": "The Proclaimers – I’m gonna be (500 miles)"}
   ]
 }

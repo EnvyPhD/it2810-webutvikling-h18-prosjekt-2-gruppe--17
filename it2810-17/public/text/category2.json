@@ -1,6 +1,6 @@
-{
-  "text1":{"Author": "21", "text": "bleh"},
-  "text2":{"Author": "22", "text": "blah"},
-  "text3":{"Author": "23", "text": "blih"},
-  "text4":{"Author": "24", "text": "bleah"}
-}
+[
+  {"Author": "Artyom", "text": "bleh"},
+  {"Author": "Homer", "text": "blah"},
+  {"Author": "Miller", "text": "blih"},
+  {"Author": "fjerdemann", "text": "bleah"}
+]
