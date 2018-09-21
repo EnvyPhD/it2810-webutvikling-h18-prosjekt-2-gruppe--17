@@ -1,12 +1,22 @@
 import React from "react";
 
 export default class Categories extends React.Component{
+  updateImg(e){
+    this.props.updateParentImg(e);
+  }
+  updateTxt(e){
+    this.props.updateParentTxt(e);
+  }
+  updateAud(e){
+    this.props.updateParentAud(e);
+  }
+
   render(){
     return(
       <div className="categories">
-        <div id ="imgcat"><ImgForm /></div>
-        <div id ="txtcat"><TextForm /></div>
-        <div id ="soundcat"><AudioForm /></div>
+        <div id ="imgcat"><ImgForm updateParent={this.updateImg.bind(this)} /></div>
+        <div id ="txtcat"><TextForm updateParent={this.updateTxt.bind(this)} /></div>
+        <div id ="soundcat"><AudioForm updateParent={this.updateAud.bind(this)} /></div>
       </div>
     );
   }
@@ -17,14 +27,20 @@ class ImgForm extends React.Component{
     super(props);
 
     this.state = {
-      selectedOption: '',
+      selectedOption: 1,
     };
 
     this.radioOptionChange = this.radioOptionChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   radioOptionChange(event){
     this.setState({selectedOption: event.target.value});
+  }
+  handleChange(e){
+    this.setState({selectedOption: e})
+    this.props.updateParent(e);
+
   }
 
   render(){
@@ -35,27 +51,27 @@ class ImgForm extends React.Component{
           <div className="imgRadio">
             <label>
              <input type="radio" value="option1"
-              checked={this.state.selectedOption ==="option1"}
-              onChange={this.radioOptionChange}/>
-              Option1
+              checked={this.state.selectedOption === 1}
+              onChange={() => this.handleChange(1)}/>
+              Art
             </label>
           </div>
 
           <div className="imgRadio">
             <label>
              <input type="radio" value="option2"
-              checked={this.state.selectedOption ==="option2"}
-              onChange={this.radioOptionChange}/>
-              Option2
+              checked={this.state.selectedOption === 2}
+              onChange={() => this.handleChange(2)}/>
+              Cartoons
             </label>
           </div>
 
           <div className="imgRadio">
             <label>
              <input type="radio" value="option3"
-              checked={this.state.selectedOption ==="option3"}
-              onChange={this.radioOptionChange}/>
-              Option3
+              checked={this.state.selectedOption === 3}
+              onChange={() => this.handleChange(3)}/>
+              Drawings
             </label>
           </div>
         </form>
@@ -70,14 +86,20 @@ class AudioForm extends React.Component{
     super(props);
 
     this.state = {
-      selectedOption: '',
+      selectedOption: 1,
     };
 
     this.radioOptionChange = this.radioOptionChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   radioOptionChange(event){
     this.setState({selectedOption: event.target.value});
+  }
+  handleChange(e){
+    this.setState({selectedOption: e})
+    this.props.updateParent(e);
+
   }
 
   render(){
@@ -88,27 +110,27 @@ class AudioForm extends React.Component{
           <div className="audioRadio">
             <label>
              <input type="radio" value="option1"
-              checked={this.state.selectedOption ==="option1"}
-              onChange={this.radioOptionChange}/>
-              Option1
+              checked={this.state.selectedOption === 1}
+              onChange={() => this.handleChange(1)}/>
+              Cinematic
             </label>
           </div>
 
           <div className="audioRadio">
             <label>
              <input type="radio" value="option2"
-              checked={this.state.selectedOption ==="option2"}
-              onChange={this.radioOptionChange}/>
-              Option2
+              checked={this.state.selectedOption === 2}
+              onChange={() => this.handleChange(2)}/>
+              Happy
             </label>
           </div>
 
           <div className="audioRadio">
             <label>
              <input type="radio" value="option3"
-              checked={this.state.selectedOption ==="option3"}
-              onChange={this.radioOptionChange}/>
-              Option3
+              checked={this.state.selectedOption === 3}
+              onChange={() => this.handleChange(3)}/>
+              Jazz
             </label>
           </div>
         </form>
@@ -123,14 +145,20 @@ class TextForm extends React.Component{
     super(props);
 
     this.state = {
-      selectedOption: '',
+      selectedOption: 1,
     };
 
     this.radioOptionChange = this.radioOptionChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   radioOptionChange(event){
     this.setState({selectedOption: event.target.value});
+  }
+  handleChange(e){
+    this.setState({selectedOption: e})
+    this.props.updateParent(e);
+
   }
 
   render(){
@@ -141,27 +169,27 @@ class TextForm extends React.Component{
           <div className="textRadio">
             <label>
              <input type="radio" value="option1"
-              checked={this.state.selectedOption ==="option1"}
-              onChange={this.radioOptionChange}/>
-              Option1
+              checked={this.state.selectedOption === 1}
+              onChange={() => this.handleChange(1)}/>
+              Money
             </label>
           </div>
 
           <div className="textRadio">
             <label>
              <input type="radio" value="option2"
-              checked={this.state.selectedOption ==="option2"}
-              onChange={this.radioOptionChange}/>
-              Option2
+              checked={this.state.selectedOption === 2}
+              onChange={() => this.handleChange(2)}/>
+              Weather
             </label>
           </div>
 
           <div className="textRadio">
             <label>
              <input type="radio" value="option3"
-              checked={this.state.selectedOption ==="option3"}
-              onChange={this.radioOptionChange}/>
-              Option3
+              checked={this.state.selectedOption === 3}
+              onChange={() => this.handleChange(3)}/>
+              Travel
             </label>
           </div>
         </form>
